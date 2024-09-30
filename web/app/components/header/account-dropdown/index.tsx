@@ -111,53 +111,6 @@ export default function AppSelector({ isMobile }: IAppSelector) {
                         <div>{t('common.userProfile.settings')}</div>
                       </div>
                     </Menu.Item>
-                    {canEmailSupport && <Menu.Item>
-                      <a
-                        className={classNames(itemClassName, 'group justify-between')}
-                        href={mailToSupport(userProfile.email, plan.type, langeniusVersionInfo.current_version)}
-                        target='_blank' rel='noopener noreferrer'>
-                        <div>{t('common.userProfile.emailSupport')}</div>
-                        <ArrowUpRight className='hidden w-[14px] h-[14px] text-gray-500 group-hover:flex' />
-                      </a>
-                    </Menu.Item>}
-                    <Menu.Item>
-                      <Link
-                        className={classNames(itemClassName, 'group justify-between')}
-                        href='https://github.com/langgenius/dify/discussions/categories/feedbacks'
-                        target='_blank' rel='noopener noreferrer'>
-                        <div>{t('common.userProfile.communityFeedback')}</div>
-                        <ArrowUpRight className='hidden w-[14px] h-[14px] text-gray-500 group-hover:flex' />
-                      </Link>
-                    </Menu.Item>
-                    <Menu.Item>
-                      <Link
-                        className={classNames(itemClassName, 'group justify-between')}
-                        href='https://discord.gg/5AEfbxcd9k'
-                        target='_blank' rel='noopener noreferrer'>
-                        <div>{t('common.userProfile.community')}</div>
-                        <ArrowUpRight className='hidden w-[14px] h-[14px] text-gray-500 group-hover:flex' />
-                      </Link>
-                    </Menu.Item>
-                    <Menu.Item>
-                      <Link
-                        className={classNames(itemClassName, 'group justify-between')}
-                        href={
-                          locale !== LanguagesSupported[1] ? 'https://docs.dify.ai/' : `https://docs.dify.ai/v/${locale.toLowerCase()}/`
-                        }
-                        target='_blank' rel='noopener noreferrer'>
-                        <div>{t('common.userProfile.helpCenter')}</div>
-                        <ArrowUpRight className='hidden w-[14px] h-[14px] text-gray-500 group-hover:flex' />
-                      </Link>
-                    </Menu.Item>
-                    <Menu.Item>
-                      <Link
-                        className={classNames(itemClassName, 'group justify-between')}
-                        href='https://roadmap.dify.ai'
-                        target='_blank' rel='noopener noreferrer'>
-                        <div>{t('common.userProfile.roadmap')}</div>
-                        <ArrowUpRight className='hidden w-[14px] h-[14px] text-gray-500 group-hover:flex' />
-                      </Link>
-                    </Menu.Item>
                     {
                       document?.body?.getAttribute('data-public-site-about') !== 'hide' && (
                         <Menu.Item>
