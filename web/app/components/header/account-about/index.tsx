@@ -38,19 +38,8 @@ export default function AccountAbout({
         <div>
           <LogoSite className='mx-auto mb-2' />
           <div className='mb-3 text-center text-xs font-normal text-gray-500'>Version {langeniusVersionInfo?.current_version}</div>
-          <div className='mb-4 text-center text-xs font-normal text-gray-700'>
-
         </div>
-        <div className='mb-4 -mx-8 h-[0.5px] bg-gray-200' />
-        <div className='flex justify-between items-center'>
-          <div className='text-xs font-medium text-gray-800'>
-            {
-              isLatest
-                ? t('common.about.latestAvailable', { version: langeniusVersionInfo.latest_version })
-                : t('common.about.nowAvailable', { version: langeniusVersionInfo.latest_version })
-            }
-          </div>
-        </div>
+    
       </div>
     </Modal>
   )
