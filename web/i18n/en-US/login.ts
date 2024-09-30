@@ -1,6 +1,6 @@
 const translation = {
   pageTitle: 'Hey, let\'s get started!👋',
-  welcome: 'Welcome to Dify, please log in to continue.',
+  welcome: 'Welcome to Askity.ai, please log in to continue.',
   email: 'Email address',
   emailPlaceholder: 'Your email',
   password: 'Password',
@@ -20,7 +20,7 @@ const translation = {
   invitationCodePlaceholder: 'Your invitation code',
   interfaceLanguage: 'Interface Language',
   timezone: 'Time zone',
-  go: 'Go to Dify',
+  go: 'Go to Askity.ai',
   sendUsMail: 'Email us your introduction, and we\'ll handle the invitation request.',
   acceptPP: 'I have read and accept the privacy policy',
   reset: 'Please run following command to reset your password',
